@@ -22,6 +22,8 @@
         <!-- Set Up Article -->
         <article class="row">
             <article class="col-sm-4">
+                <!-- Display Article Heading -->
+                <h4>Photo</h4>
                 <!-- Display Image -->
                 <figure>
                     <img src="images/ely-cathedral.JPG" alt="Ely Cathedral" class="img-fluid">
@@ -34,6 +36,9 @@
 
             <!-- Set Up Article -->
             <article class="col-sm-4">
+                <!-- Display Article Heading -->
+                <h4>Information</h4>
+                <!-- Display Information -->
                 <p>Ely Cathedral is one of the attractions in the City of Ely.</p>
                 <p>This was taken on 25 December 2019.</p>
                 <!-- Create Button -->
@@ -42,16 +47,27 @@
 
             <!-- Set Up Article -->
             <article class="col-sm-4">
+                <!-- Display Article Heading -->
+                <h4>Feedback Form</h4>
                 <!-- Set Up Form for Comments -->
                 <form>
                     <label for="comments">Comments</label>
                     <textarea class="form-control" placeholder="Enter Comments" rows="4" id="comments"></textarea>
-                    <button type="submit" class="btn btn-success btn-block"><i class="fa fa-paper-plane"></i> Submit</button>
-                    <button type="reset" class="btn btn-warning btn-block">Reset</button>
+                    <button type="submit" value="Submit" class="btn btn-success btn-block" onclick="acknowledge()"><i class="fa fa-paper-plane"></i> Submit</button>
+                    <button type="reset" value="Reset" class="btn btn-warning btn-block">Reset</button>
                 </form>
+
+                <!-- Display Acknowledgement -->
+                <p id="message"></p>
             </article>
         </article>
     </section>
+    <script>
+        // Function to Acknowledge input of comments
+        function acknowledge() {
+            document.getElementById("message").innerHTML = "Thank you for your input";
+        }
+    </script>
 </body>
 
 </html>
