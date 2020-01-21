@@ -3,7 +3,19 @@ body {
     font-family: "Roboto", Arial, Verdana, sans-serif;
 }
 
+/* Heading H1 */
 h1 {
     text-align: center;
     color: orange;
+}
+
+/* Images */
+img {
+    display: block;
+    margin: auto;
+    width: 100%;
+}
+
+.mypadding {
+    padding: 5px;
 }
