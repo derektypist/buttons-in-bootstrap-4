@@ -16,11 +16,12 @@
 <body>
     <!-- Set up Heading -->
     <h1>Welcome to Buttons in Bootstrap 4</h1>
+    <p class="text-center">Buttons in Bootstrap 4 is great fun.</p>
     <!-- Set Up Section -->
     <section>
         <!-- Set Up Article -->
         <article class="row">
-            <article class="col-sm-4 mypadding">
+            <article class="col-sm-4">
                 <!-- Display Image -->
                 <figure>
                     <img src="images/ely-cathedral.JPG" alt="Ely Cathedral" class="img-fluid">
@@ -33,9 +34,10 @@
 
             <!-- Set Up Article -->
             <article class="col-sm-4">
+                <p>Ely Cathedral is one of the attractions in the City of Ely.</p>
                 <p>This was taken on 25 December 2019.</p>
                 <!-- Create Button -->
-                <button class="btn btn-info btn-block"><i class="fas fa-info"></i> Information</button>
+                <button class="btn btn-info btn-block"><i class="fas fa-info-circle"></i> Information</button>
             </article>
 
             <!-- Set Up Article -->
@@ -43,8 +45,9 @@
                 <!-- Set Up Form for Comments -->
                 <form>
                     <label for="comments">Comments</label>
-                    <textarea class="form-control" placeholder="Enter Comments" id="comments"></textarea>
+                    <textarea class="form-control" placeholder="Enter Comments" rows="4" id="comments"></textarea>
                     <button type="submit" class="btn btn-success btn-block"><i class="fa fa-paper-plane"></i> Submit</button>
+                    <button type="reset" class="btn btn-warning btn-block">Reset</button>
                 </form>
             </article>
         </article>
