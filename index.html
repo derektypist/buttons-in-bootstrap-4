@@ -53,8 +53,19 @@
                 <form>
                     <label for="comments">Comments</label>
                     <textarea class="form-control" placeholder="Enter Comments" rows="4" id="comments"></textarea>
-                    <button type="submit" value="Submit" class="btn btn-success btn-block" onclick="acknowledge()"><i class="fa fa-paper-plane"></i> Submit</button>
-                    <button type="reset" value="Reset" class="btn btn-warning btn-block">Reset</button>
+                    <!-- Set up Row -->
+                    <article class="row">
+                        <!-- Set up column for Submit Button -->
+                        <article class="col-sm-7 col-xs-8">
+                            <button type="submit" value="Submit" class="btn btn-success btn-block" onclick="acknowledge()"><i class="fa fa-paper-plane"></i> Submit</button>
+                        </article>
+                        <!-- Set up column for Reset Button -->
+                        <article class="col-sm-5 col-xs-4">
+                            <button type="reset" value="Reset" class="btn btn-warning btn-block">Reset</button>
+                        </article>
+                    
+                    </article>
+                   
                 </form>
 
                 <!-- Display Acknowledgement -->
@@ -62,6 +73,7 @@
             </article>
         </article>
     </section>
+    <!-- Load Script -->
     <script>
         // Function to Acknowledge input of comments
         function acknowledge() {
